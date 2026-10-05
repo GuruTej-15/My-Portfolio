@@ -14,19 +14,19 @@ const focusItems: FocusItem[] = [
     icon: <Server className="w-4 h-4 text-[#2E8B57]" />,
     tag: 'DEVOPS & CLOUD-NATIVE',
     title: 'Kubernetes Cluster Observation & Overlay Governance',
-    description: 'Expanding read-only observation architectures that correlate live Argo CD deployments with GitHub pull requests without destructive cluster interventions.',
+    description: 'Operating non-intrusive cluster observation for Kubernetes and Argo CD, ingesting HMAC-SHA256 GitHub webhooks into durable Redis/BullMQ worker queues with Trivy vulnerability scanning.',
   },
   {
     icon: <Activity className="w-4 h-4 text-[#986953]" />,
     tag: 'FULL-STACK PERFORMANCE',
-    title: 'Next.js 16 App Router & Aggregation Optimization',
-    description: 'Benchmarking compound database indexes, server transitions, and streaming render performance across high-velocity competitive programming dashboards.',
+    title: 'Next.js 16 App Router & Data Pipeline Optimization',
+    description: 'Refining responsive MongoDB data aggregation pipelines and query indexing in RecordHub to sustain 35% faster user profile loading under multi-metric retrieval.',
   },
   {
     icon: <Sparkles className="w-4 h-4 text-[#D49879]" />,
     tag: 'AGENTIC ARCHITECTURES',
-    title: 'Oracle Certified Agentic AI & Systems Tool Calling',
-    description: 'Exploring deterministic multi-agent patterns, tool invocation protocols, and OCI foundation model pipelines grounded in real software engineering workflows.',
+    title: 'Oracle Certified Agentic AI Foundations',
+    description: 'Studying autonomous AI agent workflows, deterministic tool invocation protocols, and OCI foundation model patterns as certified by Oracle Cloud Infrastructure.',
   },
 ];
 

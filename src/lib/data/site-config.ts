@@ -4,7 +4,7 @@ export const siteConfig: SiteConfig = {
   name: 'GuruTej Pratap',
   role: 'Full-Stack Developer & Systems Builder',
   tagline: 'Building Digital Systems with Engineering Rigor.',
-  shortBio: 'B.Tech CSE student at Lovely Professional University specializing in scalable full-stack web applications, OS concurrency, distributed architectures, and algorithmic optimization.',
+  shortBio: 'B.Tech CSE student at Lovely Professional University, Punjab (2024–2028) specializing in scalable full-stack web applications, OS concurrency, distributed architectures, and algorithmic optimization.',
   location: 'Phagwara, Punjab / Etawah, Uttar Pradesh',
   email: 'gurutej70@gmail.com',
   phone: '+91 7037767875',

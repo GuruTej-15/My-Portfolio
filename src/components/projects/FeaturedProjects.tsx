@@ -76,7 +76,7 @@ export function FeaturedProjects() {
                       </span>
                     </div>
                     <span className="text-xs text-[#675B57] max-w-xs leading-tight">
-                      Reduced profile load latency via compound Mongoose database indexing.
+                      Faster profile loading achieved through responsive data aggregation pipeline work.
                     </span>
                   </div>
                 </div>
@@ -184,14 +184,14 @@ export function FeaturedProjects() {
               <div className="mt-5 p-3 rounded-xl bg-[#E9F6F5]/50 border border-[#D8E5E3] flex items-center justify-between">
                 <div>
                   <span className="text-[10px] font-mono text-[#90A9A6] uppercase block">
-                    Stress Result
+                    Heavy Concurrency
                   </span>
                   <span className="text-base font-bold font-display text-[#352A27]">
-                    40% Abort Reduction
+                    40% Lower Simulated Abort Rate
                   </span>
                 </div>
                 <span className="text-xs font-mono text-[#675B57]">
-                  O(V + E) DFS Cycle Detection
+                  Priority victim selection heuristics
                 </span>
               </div>
 

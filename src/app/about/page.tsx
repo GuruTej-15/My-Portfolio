@@ -55,7 +55,7 @@ export default function AboutPage() {
           <div className="lg:col-span-7 flex flex-col gap-6 text-[#675B57] leading-relaxed">
             <div className="space-y-4 text-base sm:text-lg">
               <p>
-                I am a third-year Computer Science and Engineering student at <strong className="text-[#352A27]">Lovely Professional University</strong> with a <strong className="text-[#352A27]">7.42 CGPA</strong>. My path in technology is centered on one guiding principle: <em className="text-[#352A27] font-medium">&ldquo;Build to understand; design to simplify.&rdquo;</em>
+                I am a Computer Science and Engineering student at <strong className="text-[#352A27]">Lovely Professional University, Punjab</strong> (2024–2028) with a <strong className="text-[#352A27]">7.42 CGPA</strong>. My path in technology is centered on one guiding principle: <em className="text-[#352A27] font-medium">&ldquo;Build to understand; design to simplify.&rdquo;</em>
               </p>
               <p>
                 Rather than treating web development as merely connecting component libraries, I examine what happens under the surface—from how an operating system schedules concurrent file locks to how a Redis queue prevents webhook data loss during high-volume CI deployments.

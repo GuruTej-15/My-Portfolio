@@ -21,7 +21,7 @@ export const projectsData: Project[] = [
     ],
     keyContributions: [
       'Engineered authentication security model completely eliminating token leakage to client-side JS',
-      'Optimized aggregation queries reducing user profile retrieval latency by 35%',
+      'Optimized responsive data aggregation pipelines, reducing user profile retrieval latency by 35%',
       'Designed responsive UI/UX supporting 10+ competition metrics and exportable verified portfolios',
     ],
     challengesAndLearnings: [
@@ -29,7 +29,7 @@ export const projectsData: Project[] = [
       'High-volume contest metric queries were optimized using compound database indexing and lean execution projections',
     ],
     metrics: [
-      { label: 'Profile Latency', value: '-35%', context: 'Reduced profile load latency via indexed Mongoose aggregation' },
+      { label: 'Profile Latency', value: '-35%', context: 'Faster profile loading achieved through responsive data aggregation pipeline work' },
       { label: 'Tracked Metrics', value: '10+', context: 'Multi-platform competition metrics and rating indicators' },
       { label: 'Session Security', value: 'httpOnly', context: 'XSS-immune JWT authentication in secure cookies' },
     ],
@@ -53,12 +53,12 @@ export const projectsData: Project[] = [
       'Dual-engine implementation: Core lock semantics in C with an interactive browser-based visualization engine in ES6 JavaScript',
       'Readers-Writer lock synchronization model with strict FIFO queue scheduling to eradicate thread starvation',
       'O(V + E) two-level deadlock detection algorithm using DFS-based cycle discovery in Resource Allocation Graphs',
-      'Automated priority-based victim selection heuristics preemption to break circular wait dependencies',
+      'Automated priority victim selection heuristics to break circular wait dependencies',
       'Automated stress-testing suite capable of simulating 100+ concurrent operations with live kernel-style logging',
     ],
     keyContributions: [
       'Implemented deadlock graph cycle detection in O(V + E) time complexity',
-      'Devised priority victim selection reducing transaction abort rate by 40% under extreme contention',
+      'Devised priority victim selection heuristics reducing simulated transaction abort rates by 40% under heavy concurrency',
       'Created real-time visual process state inspector tracking IDLE, HOLDING_SHARED, HOLDING_EXCLUSIVE, and BLOCKED states',
     ],
     challengesAndLearnings: [
@@ -66,7 +66,7 @@ export const projectsData: Project[] = [
       'Visualizing graph cycle detection in real-time required efficient DOM batching and event dispatching',
     ],
     metrics: [
-      { label: 'Abort Rate Reduction', value: '40%', context: 'Reduced simulated transaction abort rates under heavy contention' },
+      { label: 'Simulated Abort Rate', value: '-40%', context: 'Reduced simulated transaction abort rates under heavy concurrency via priority victim selection heuristics' },
       { label: 'Cycle Detection', value: 'O(V + E)', context: 'DFS cycle discovery on directed Resource Allocation Graphs' },
       { label: 'Stress Capacity', value: '100+', context: 'Simultaneous automated concurrent lock/release operations' },
     ],

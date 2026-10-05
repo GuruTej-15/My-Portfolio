@@ -45,7 +45,7 @@ export function EditorialHero() {
               Full-Stack Developer & Systems Builder
             </h2>
             <p className="text-base sm:text-lg text-[#675B57] leading-relaxed">
-              I am <strong className="text-[#352A27] font-semibold">{siteConfig.name}</strong>, a Computer Science student at Lovely Professional University. I architect resilient web applications, concurrency simulators, and cloud-native infrastructure platforms that bridge algorithmic depth with clean UX.
+              I am <strong className="text-[#352A27] font-semibold">{siteConfig.name}</strong>, a Computer Science student at Lovely Professional University, Punjab (2024–2028). I architect resilient web applications, concurrency simulators, and cloud-native infrastructure platforms that bridge algorithmic depth with clean UX.
             </p>
           </div>
 
@@ -105,7 +105,7 @@ export function EditorialHero() {
             </a>
 
             <span className="hidden md:inline text-[#90A9A6]">
-              // 7.42 CGPA • Etawah / Punjab
+              // 7.42 CGPA • Lovely Professional University, Punjab
             </span>
           </div>
         </div>
