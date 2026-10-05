@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mint-bg: #FDFDFD;
+  --color-mint-soft: #E9F6F5;
+  --color-mint-surface: #D3E8E6;
+  --color-mint-card: #FFFFFF;
+  --color-mint-border: #D8E5E3;
+  --color-mint-blueprint: #90A9A6;
+  --color-mint-teal: #90A9A6;
+
+  --color-charcoal-primary: #352A27;
+  --color-charcoal-muted: #675B57;
+  --color-charcoal-dim: #8E827E;
+
+  --color-coral-warm: #D49879;
+  --color-coral-deep: #986953;
+
+  --color-system-live: #2E8B57;
+  --color-system-running: #2A7B88;
+  --color-system-blocked: #B85C50;
+
+  --font-display: var(--font-syne), Georgia, serif;
+  --font-sans: var(--font-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-mono), monospace;
+}
+
+:root {
+  --bg-primary: #FDFDFD;
+  --bg-soft-mint: #E9F6F5;
+  --surface-mint: #D3E8E6;
+  --surface-card: #FFFFFF;
+  --border-muted: #D8E5E3;
+  --border-blueprint: #90A9A6;
+  --muted-teal: #90A9A6;
+  --text-primary: #352A27;
+  --text-muted: #675B57;
+  --text-dim: #8E827E;
+  --accent-warm: #D49879;
+  --accent-deep: #986953;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #FDFDFD;
+  color: #352A27;
+  font-family: var(--font-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom scrollbar matching Mint Systems */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FDFDFD;
+}
+::-webkit-scrollbar-thumb {
+  background: #D3E8E6;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #90A9A6;
+}
+
+/* Blueprint grid utility */
+.blueprint-grid {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(144, 169, 166, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(144, 169, 166, 0.08) 1px, transparent 1px);
+}
