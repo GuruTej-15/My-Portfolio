@@ -10,23 +10,23 @@ interface ProofItem {
 const proofItems: ProofItem[] = [
   {
     metric: '5 Systems',
-    label: 'Engineered & Deployed',
-    detail: 'Full-stack, OS concurrency & DevOps',
+    label: 'Featured Engineering Projects',
+    detail: 'Full-stack, OS concurrency & cloud-native DevOps',
   },
   {
-    metric: '-35%',
-    label: 'Profile Latency',
-    detail: 'Indexed Mongoose aggregation (RecordHub)',
+    metric: '35% Faster',
+    label: 'Profile Loading — RecordHub',
+    detail: 'Indexed Mongoose schemas & aggregation pipelines',
   },
   {
     metric: '7.42 CGPA',
     label: 'B.Tech CSE @ LPU',
-    detail: 'Computer Science & Engineering',
+    detail: 'Lovely Professional University (2024 - 2028)',
   },
   {
     metric: 'Oracle & Infosys',
-    label: 'Verified Credentials',
-    detail: 'Agentic AI, OCI AI, C++ Certified',
+    label: 'Verified Certifications',
+    detail: 'Agentic AI, OCI AI & C++ Systems Certified',
   },
 ];
 
@@ -38,11 +38,11 @@ export function ProofStrip({ className }: ProofStripProps) {
   return (
     <div
       className={clsx(
-        'w-full py-6 px-6 sm:px-8 rounded-2xl bg-[#E9F6F5]/60 border border-[#D8E5E3] backdrop-blur-sm',
+        'w-full py-6 px-6 sm:px-8 rounded-2xl bg-[#E9F6F5]/70 border border-[#D8E5E3] backdrop-blur-sm shadow-xs',
         className
       )}
     >
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 divide-y sm:divide-y-0 sm:divide-x divide-[#90A9A6]/20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 divide-y sm:divide-y-0 sm:divide-x divide-[#90A9A6]/20">
         {proofItems.map((item, idx) => (
           <div
             key={item.metric}
