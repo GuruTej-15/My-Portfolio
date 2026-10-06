@@ -4,6 +4,33 @@ export interface ProjectMetric {
   context: string;
 }
 
+export interface TechnicalDecision {
+  title: string;
+  rationale: string;
+  outcome: string;
+}
+
+export interface TechnicalDeepDiveSection {
+  title: string;
+  subtitle: string;
+  description: string;
+  keyPoints: string[];
+  codeOrStructureSnippet?: string;
+}
+
+export interface VisualAsset {
+  caption: string;
+  description: string;
+  imageSrc?: string;
+  diagramType?: string;
+  badge: string;
+}
+
+export interface StackDomain {
+  domain: string;
+  tools: string[];
+}
+
 export interface Project {
   slug: string;
   title: string;
@@ -11,18 +38,25 @@ export interface Project {
   category: 'Full-Stack' | 'Systems & Concurrency' | 'DevOps & Cloud-Native' | 'PWA & Algorithms';
   status: 'LIVE' | 'VERIFIED' | 'RUNNING';
   plainEnglishSummary: string;
+  inSimpleWords: string;
   problem: string;
+  whyItMatters: string;
   whatIBuilt: string;
   howItWorks: string;
   architectureDetails: string[];
   keyContributions: string[];
+  technicalDecisions: TechnicalDecision[];
   challengesAndLearnings: string[];
   metrics: ProjectMetric[];
   technologies: string[];
+  stackBreakdown: StackDomain[];
+  technicalDeepDive: TechnicalDeepDiveSection[];
+  visualAssets?: VisualAsset[];
   liveUrl?: string;
   githubUrl: string;
   heroImage: string;
   featured: boolean;
+  order: number;
 }
 
 export interface SkillItem {
