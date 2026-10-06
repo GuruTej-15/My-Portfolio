@@ -27,11 +27,11 @@ export function ProjectsDirectory({ projects }: ProjectsDirectoryProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
   const categories = [
-    { label: 'All Systems', value: 'All', count: projects.length },
-    { label: 'Full-Stack', value: 'Full-Stack', count: projects.filter((p) => p.category === 'Full-Stack').length },
-    { label: 'Systems & Concurrency', value: 'Systems & Concurrency', count: projects.filter((p) => p.category === 'Systems & Concurrency').length },
-    { label: 'DevOps & Cloud-Native', value: 'DevOps & Cloud-Native', count: projects.filter((p) => p.category === 'DevOps & Cloud-Native').length },
-    { label: 'PWA & Algorithms', value: 'PWA & Algorithms', count: projects.filter((p) => p.category === 'PWA & Algorithms').length },
+    { label: 'ALL', value: 'All', count: projects.length },
+    { label: 'FULL-STACK', value: 'Full-Stack', count: projects.filter((p) => p.category === 'Full-Stack').length },
+    { label: 'SYSTEMS', value: 'Systems & Concurrency', count: projects.filter((p) => p.category === 'Systems & Concurrency').length },
+    { label: 'DEVOPS', value: 'DevOps & Cloud-Native', count: projects.filter((p) => p.category === 'DevOps & Cloud-Native').length },
+    { label: 'PWA', value: 'PWA & Algorithms', count: projects.filter((p) => p.category === 'PWA & Algorithms').length },
   ];
 
   const filteredProjects = selectedCategory === 'All'
@@ -48,8 +48,8 @@ export function ProjectsDirectory({ projects }: ProjectsDirectoryProps) {
 
   return (
     <div className="space-y-12">
-      {/* Category Filter Selector */}
-      <div className="flex flex-wrap items-center gap-2 pt-2">
+      {/* Minimal Category Filter Selector */}
+      <div className="flex flex-wrap items-center gap-1.5 pt-2 pb-1">
         {categories.map((cat) => {
           const isActive = selectedCategory === cat.value;
           return (
@@ -57,17 +57,17 @@ export function ProjectsDirectory({ projects }: ProjectsDirectoryProps) {
               key={cat.value}
               onClick={() => setSelectedCategory(cat.value)}
               className={clsx(
-                'px-4 py-2 rounded-xl text-xs font-mono font-semibold transition-all duration-200 flex items-center gap-2 border cursor-pointer',
+                'px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-colors duration-150 flex items-center gap-1.5 cursor-pointer',
                 isActive
-                  ? 'bg-[#352A27] text-[#FDFDFD] border-[#352A27] shadow-xs'
-                  : 'bg-[#FFFFFF] text-[#675B57] border-[#D8E5E3] hover:border-[#90A9A6] hover:text-[#352A27]'
+                  ? 'bg-[#352A27] text-[#FFFFFF]'
+                  : 'bg-[#F4F9F8] text-[#675B57] hover:bg-[#E9F6F5] hover:text-[#352A27] border border-[#D8E5E3]/60'
               )}
             >
               <span>{cat.label}</span>
               <span
                 className={clsx(
-                  'px-1.5 py-0.2 rounded-md text-[10px]',
-                  isActive ? 'bg-[#4B3C38] text-[#E9F6F5]' : 'bg-[#E9F6F5] text-[#90A9A6]'
+                  'text-[10px] font-mono px-1 rounded',
+                  isActive ? 'bg-[#FFFFFF]/20 text-[#FFFFFF]' : 'text-[#90A9A6]'
                 )}
               >
                 {cat.count}

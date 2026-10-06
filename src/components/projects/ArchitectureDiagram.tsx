@@ -237,7 +237,7 @@ function BloodBankArchitecture({ className }: { className?: string }) {
       step: '01',
       title: 'Portal Ingestion',
       tech: 'React + Vite Client',
-      items: ['Hospital Emergency Requests', 'Donor Registrations + QR', 'Inventory Tracking'],
+      items: ['Hospital Emergency Requests', 'Donor Registration Records', 'Real-Time Inventory Updates'],
       icon: <Layers className="w-4 h-4 text-[#2E8B57]" />,
     },
     {
@@ -250,15 +250,15 @@ function BloodBankArchitecture({ className }: { className?: string }) {
     {
       step: '03',
       title: 'Custom Data Structures',
-      tech: 'In-Memory C++/Node Engine',
+      tech: 'In-Memory Algorithmic Engine',
       items: ['Binary Heap Priority Queue', 'MinHeap FEFO Expiry Sorting', 'Hash Table ABO/Rh Matching'],
       icon: <Cpu className="w-4 h-4 text-[#D49879]" />,
     },
     {
       step: '04',
-      title: 'Storage & Fulfillment',
-      tech: 'MongoDB + QR Dispatch',
-      items: ['O(log n) Emergency Triage', 'Donor QR Verification', 'Low-Stock Automated Alerts'],
+      title: 'Storage & Persistence',
+      tech: 'MongoDB Atlas',
+      items: ['O(log n) Emergency Triage Queue', 'Donor Record History', 'Low-Stock Inventory Alerts'],
       icon: <Database className="w-4 h-4 text-[#352A27]" />,
     },
   ];
