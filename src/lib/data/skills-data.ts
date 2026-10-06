@@ -52,11 +52,11 @@ export const skillsData: SkillCategory[] = [
     skills: [
       { name: 'Git & GitHub Workflows', category: 'Cloud / DevOps', highlight: true, usedInProjects: ['recordhub', 'os-locking-simulator', 'unified-devops'] },
       { name: 'GitHub Actions CI/CD', category: 'Cloud / DevOps', highlight: true, usedInProjects: ['unified-devops'] },
-      { name: 'Kubernetes (Kind v1.36.1)', category: 'Cloud / DevOps', highlight: true, usedInProjects: ['unified-devops'] },
-      { name: 'Argo CD (v3.5.3)', category: 'Cloud / DevOps', highlight: true, usedInProjects: ['unified-devops'] },
+      { name: 'Kubernetes (Kind)', category: 'Cloud / DevOps', highlight: true, usedInProjects: ['unified-devops'] },
+      { name: 'Argo CD', category: 'Cloud / DevOps', highlight: true, usedInProjects: ['unified-devops'] },
       { name: 'Redis & BullMQ', category: 'Cloud / DevOps', highlight: true, usedInProjects: ['unified-devops'] },
       { name: 'Linux / Shell Scripting', category: 'Cloud / DevOps', highlight: false, usedInProjects: ['os-locking-simulator', 'unified-devops'] },
-      { name: 'Vercel Edge Deployment', category: 'Cloud / DevOps', highlight: false, usedInProjects: ['recordhub', 'smart-blood-bank'] },
+      { name: 'Vercel', category: 'Cloud / DevOps', highlight: false, usedInProjects: ['recordhub', 'smart-blood-bank'] },
     ],
   },
   {
@@ -64,7 +64,7 @@ export const skillsData: SkillCategory[] = [
     description: 'Testing suites, container runtimes, API testing tools, and local development environments.',
     skills: [
       { name: 'Docker', category: 'Developer Tools', highlight: true, usedInProjects: ['unified-devops'] },
-      { name: 'Trivy CVE Scanner', category: 'Developer Tools', highlight: false, usedInProjects: ['unified-devops'] },
+      { name: 'Trivy', category: 'Developer Tools', highlight: false, usedInProjects: ['unified-devops'] },
       { name: 'Postman & Curl', category: 'Developer Tools', highlight: false, usedInProjects: ['recordhub', 'smart-blood-bank'] },
       { name: 'Make & Build Tools', category: 'Developer Tools', highlight: false, usedInProjects: ['os-locking-simulator'] },
       { name: 'VS Code & POSIX Toolchain', category: 'Developer Tools', highlight: false },

@@ -15,19 +15,17 @@ import {
   ExternalLink,
 } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
-import { PageHeader } from '@/components/layout/PageHeader';
 import { Button } from '@/components/ui/Button';
 import { skillsData } from '@/lib/data/skills-data';
 import { PageEndCta } from '@/components/common/PageEndCta';
-import { Sparkle } from '@/components/ui/Sparkle';
 import clsx from 'clsx';
 
 export const metadata: Metadata = {
-  title: 'Engineering Capabilities & Technical Stack — GuruTej Pratap',
+  title: 'Engineering Skills & Stack — GuruTej Pratap',
   description:
-    'Verified engineering toolkit, languages, systems primitives, and cloud-native infrastructure utilized across GuruTej Pratap’s verified software projects.',
+    'Verified full-stack engineering toolkit, languages, systems primitives, and cloud infrastructure utilized across GuruTej Pratap’s verified software projects.',
   openGraph: {
-    title: 'Engineering Capabilities — GuruTej Pratap',
+    title: 'Engineering Skills & Stack — GuruTej Pratap',
     description:
       'What I actually build with: Core CS, Frontend, Backend, Databases, Cloud/DevOps, and Developer Tools.',
   },
@@ -178,10 +176,10 @@ export default function SkillsPage() {
         </section>
 
         {/* =========================================================================
-            7 VERIFIED SKILL DOMAINS
+            7 VERIFIED SKILL DOMAINS (OPEN EDITORIAL GRID — NOT BOXED CARDS)
             ========================================================================= */}
-        <section className="space-y-12 mb-20 sm:mb-24">
-          <div className="max-w-3xl">
+        <section className="mb-20 sm:mb-24">
+          <div className="max-w-3xl mb-10 pb-4 border-b border-[#D8E5E3]">
             <span className="text-xs font-mono text-[#90A9A6] uppercase tracking-wider block font-semibold mb-2">
               01 // DOMAIN-ORGANIZED ARSENAL
             </span>
@@ -193,11 +191,11 @@ export default function SkillsPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
             {skillsData.map((category) => (
               <div
                 key={category.title}
-                className="p-7 sm:p-8 rounded-3xl bg-[#FFFFFF] border border-[#D8E5E3] hover:border-[#90A9A6] transition-all flex flex-col justify-between group shadow-xs"
+                className="space-y-4 pb-8 border-b border-[#D8E5E3]/80 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center gap-2 mb-2">
@@ -209,19 +207,19 @@ export default function SkillsPage() {
                     </h3>
                   </div>
 
-                  <p className="text-xs text-[#675B57] leading-relaxed mb-6">
+                  <p className="text-xs text-[#675B57] leading-relaxed mb-4">
                     {category.description}
                   </p>
 
                   {/* Skills Grid */}
-                  <div className="flex flex-wrap gap-2.5">
+                  <div className="flex flex-wrap gap-2">
                     {category.skills.map((skill) => (
                       <div
                         key={skill.name}
                         className={clsx(
-                          'inline-flex flex-col gap-1 px-3.5 py-2 rounded-xl border transition-all text-xs',
+                          'inline-flex flex-col gap-1 px-3 py-1.5 rounded-xl border transition-all text-xs',
                           skill.highlight
-                            ? 'bg-[#E9F6F5]/50 border-[#D8E5E3] hover:border-[#2E8B57]'
+                            ? 'bg-[#E9F6F5]/60 border-[#D8E5E3] hover:border-[#2E8B57]'
                             : 'bg-[#FDFDFD] border-[#D8E5E3] hover:border-[#90A9A6]'
                         )}
                       >
@@ -264,7 +262,7 @@ export default function SkillsPage() {
         <PageEndCta
           variant="blueprint"
           title="Have something worth building?"
-          subtitle="Explore the verified code repositories or reach out directly to discuss how my systems and full-stack skill set aligns with your team."
+          subtitle="Explore the verified code repositories or reach out directly to discuss how my full-stack and systems skill set aligns with your team."
           primaryButtonText="Contact Me"
           primaryButtonHref="/contact"
           secondaryButtonText="Explore Projects"

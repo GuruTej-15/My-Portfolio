@@ -49,7 +49,7 @@ export function ContactForm() {
       </div>
 
       <p className="text-xs sm:text-sm text-[#675B57] mb-8 leading-relaxed">
-        Recruiters and hiring managers: send a direct note through your email client or write to{' '}
+        This form formats your message and opens your default email client (via mailto). You can also write to me directly at{' '}
         <button
           onClick={handleCopyEmail}
           className="text-[#352A27] font-semibold underline hover:text-[#986953] transition-colors cursor-pointer"

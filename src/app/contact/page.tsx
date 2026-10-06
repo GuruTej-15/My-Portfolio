@@ -9,13 +9,13 @@ import { ContactForm } from '@/components/contact/ContactForm';
 import { PageEndCta } from '@/components/common/PageEndCta';
 
 export const metadata: Metadata = {
-  title: 'Contact GuruTej Pratap — Full-Stack & Systems Engineer',
+  title: 'Contact GuruTej Pratap — Full-Stack Developer',
   description:
-    'Get in touch with GuruTej Pratap for full-stack engineering opportunities, systems roles, and software internships. Direct email, LinkedIn, and canonical CV download.',
+    'Get in touch with GuruTej Pratap for full-stack software development opportunities and software internships. Direct email, LinkedIn, and canonical CV download.',
   openGraph: {
     title: 'Contact GuruTej Pratap — Engineering Inquiries',
     description:
-      'Have something worth building? Connect directly for software engineering internships and developer roles.',
+      'Have something worth building? Connect directly for full-stack development and software engineering opportunities.',
   },
 };
 
@@ -197,13 +197,13 @@ export default function ContactPage() {
           </div>
         </div>
 
-        {/* Closing Assurance Note */}
+        {/* Closing Direct Inquiries Note */}
         <div className="p-6 rounded-2xl bg-[#E9F6F5]/50 border border-[#D8E5E3] flex flex-wrap items-center justify-between text-xs font-mono text-[#675B57] gap-3">
           <span className="flex items-center gap-1.5 text-[#2E8B57] font-semibold">
             <CheckCircle2 className="w-4 h-4" />
-            <span>Response Guarantee: Typically reply within 24 business hours</span>
+            <span>Direct Inquiries: I usually respond as soon as I can.</span>
           </span>
-          <span className="text-[#90A9A6]">All inquiries received directly to personal inbox</span>
+          <span className="text-[#90A9A6]">All inquiries received directly at {siteConfig.email}</span>
         </div>
       </Container>
     </div>

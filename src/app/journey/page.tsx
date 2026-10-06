@@ -8,11 +8,11 @@ import { JourneyTimeline } from '@/components/journey/JourneyTimeline';
 import { PageEndCta } from '@/components/common/PageEndCta';
 
 export const metadata: Metadata = {
-  title: 'Engineering Journey & Chronology — GuruTej Pratap',
+  title: 'Journey & Milestones — GuruTej Pratap',
   description:
-    'Chronological engineering milestones of GuruTej Pratap: secondary education, B.Tech CSE at Lovely Professional University, hackathons, certifications, and systems project developments.',
+    'Chronological academic and technical milestones: B.Tech CSE at Lovely Professional University, summer training, hackathons, and software platform developments.',
   openGraph: {
-    title: 'Engineering Journey — GuruTej Pratap',
+    title: 'Journey & Milestones — GuruTej Pratap',
     description:
       'Chronological academic and technical milestones: B.Tech CSE, systems development, training, and verified achievements.',
   },

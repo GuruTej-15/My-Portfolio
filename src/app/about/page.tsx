@@ -5,28 +5,20 @@ import {
   Download,
   ArrowRight,
   CheckCircle2,
-  Cpu,
-  Layers,
-  Database,
-  ShieldCheck,
-  Terminal,
-  ExternalLink,
   GraduationCap,
   Sparkles,
 } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
-import { PageHeader } from '@/components/layout/PageHeader';
 import { Button } from '@/components/ui/Button';
 import { PortraitDisplay } from '@/components/hero/PortraitDisplay';
 import { PageEndCta } from '@/components/common/PageEndCta';
-import { Sparkle } from '@/components/ui/Sparkle';
 
 export const metadata: Metadata = {
-  title: 'About GuruTej Pratap — Full-Stack & Systems Engineer',
+  title: 'About GuruTej Pratap — Full-Stack Developer',
   description:
     'Who is GuruTej Pratap beyond project cards: engineering philosophy, full-stack systems approach, computer science education at Lovely Professional University, and technical focus.',
   openGraph: {
-    title: 'About GuruTej Pratap — Digital Systems Builder',
+    title: 'About GuruTej Pratap — Full-Stack Developer',
     description:
       'I build digital systems by understanding how they work beneath the surface. B.Tech CSE at Lovely Professional University.',
   },
@@ -35,15 +27,15 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   const buildingAreas = [
     {
-      domain: '01 // Full-Stack Web Systems',
-      title: 'Resilient Web Applications',
+      domain: '01 // FULL-STACK WEB SYSTEMS',
+      title: 'Full-Stack Web Platforms',
       description:
-        'Architecting production-ready applications with Next.js 16 App Router, React 19, Express route handlers, and indexed MongoDB data pipelines. Emphasizes end-to-end type safety, httpOnly security, and fast profile loading.',
+        'Building full-stack web applications with Next.js 16 App Router, React 19, Express route handlers, and indexed MongoDB data pipelines. Emphasizes end-to-end type safety, httpOnly cookie session security, and fast profile loading.',
       projectLink: '/projects/recordhub',
       projectName: 'RecordHub Case Study',
     },
     {
-      domain: '02 // Systems & Concurrency',
+      domain: '02 // SYSTEMS & CONCURRENCY',
       title: 'Low-Level Synchronization',
       description:
         'Modeling POSIX file locking primitives, Readers-Writer synchronization locks, strict FIFO queues, and O(V + E) DFS graph cycle detection in ANSI C and ES6 JavaScript to visualize and resolve deadlocks under high contention.',
@@ -51,7 +43,7 @@ export default function AboutPage() {
       projectName: 'OS Simulator Case Study',
     },
     {
-      domain: '03 // Cloud-Native & DevOps',
+      domain: '03 // CLOUD-NATIVE & DEVOPS',
       title: 'Non-Destructive Observation Overlays',
       description:
         'Building telemetry and governance control planes connecting Git commits, BullMQ worker queues, Trivy vulnerability policy gates, and live Kubernetes clusters (Kind v1.36.1) without destructive cluster modifications.',
@@ -59,7 +51,7 @@ export default function AboutPage() {
       projectName: 'Unified DevOps Case Study',
     },
     {
-      domain: '04 // Algorithmic Engines',
+      domain: '04 // ALGORITHMIC ENGINES',
       title: 'Data Structures Applied to Reality',
       description:
         'Translating classical computer science theory—such as Binary Heap Priority Queues for hospital emergency triage in O(log n) time and MinHeap FEFO expiration sorting—into practical healthcare workflows and offline PWAs.',
@@ -134,8 +126,8 @@ export default function AboutPage() {
                 <span className="text-[#352A27] font-semibold">GuruTej Pratap</span>
               </div>
               <div className="flex items-center justify-between py-2 border-b border-[#D8E5E3]">
-                <span className="text-[#90A9A6]">FOCUS:</span>
-                <span className="text-[#2E8B57] font-semibold">Full-Stack & Systems</span>
+                <span className="text-[#90A9A6]">PRIMARY FOCUS:</span>
+                <span className="text-[#2E8B57] font-semibold">Full-Stack Development</span>
               </div>
               <div className="flex items-center justify-between pt-2">
                 <span className="text-[#90A9A6]">LOCATION:</span>
@@ -155,11 +147,11 @@ export default function AboutPage() {
               <strong className="text-[#352A27] font-semibold">
                 Lovely Professional University, Punjab
               </strong>{' '}
-              (2024–2028, CGPA: 7.42). While many developers treat web software as merely wiring together third-party packages, I am driven by understanding what actually happens when bytes travel across a socket or when concurrent threads contend for a file.
+              (Aug 2024 – May 2028, CGPA: 7.42). While many developers treat web software as merely wiring together third-party packages, I am driven by understanding what actually happens when bytes travel across a socket or when concurrent threads contend for a file.
             </p>
 
             <p>
-              My background blends rigorous theoretical computer science with end-to-end practical delivery. In the classroom and labs, I study process scheduling, memory hierarchies, database indexing, and graph traversal. In code, I translate those principles into working software: from a <strong className="text-[#352A27]">Next.js 16 competitive programming tracker</strong> with zero-leakage httpOnly authentication, to a <strong className="text-[#352A27]">POSIX locking simulator</strong> that detects deadlocks with DFS cycles.
+              My background blends rigorous theoretical computer science with end-to-end practical delivery. In coursework and projects, I study process scheduling, memory hierarchies, database indexing, and graph traversal. In code, I translate those principles into working software: from a <strong className="text-[#352A27]">Next.js 16 competitive programming tracker</strong> with zero-leakage httpOnly authentication, to a <strong className="text-[#352A27]">POSIX locking simulator</strong> that detects deadlocks with DFS cycles.
             </p>
 
             <p>
@@ -185,10 +177,10 @@ export default function AboutPage() {
         </section>
 
         {/* =========================================================================
-            3. WHAT I BUILD
+            3. WHAT I BUILD (OPEN EDITORIAL LAYOUT — NOT BOXED CARDS)
             ========================================================================= */}
         <section className="mb-20 sm:mb-24 border-t border-[#D8E5E3] pt-12 sm:pt-16">
-          <div className="max-w-3xl mb-10">
+          <div className="max-w-3xl mb-12">
             <span className="text-xs font-mono text-[#90A9A6] uppercase tracking-wider block font-semibold mb-2">
               01 // CORE CAPABILITIES
             </span>
@@ -196,34 +188,38 @@ export default function AboutPage() {
               What I Build
             </h2>
             <p className="mt-3 text-base text-[#675B57] leading-relaxed">
-              Real systems engineered to solve concrete friction points across web, concurrency, and cloud infrastructure.
+              Real software systems engineered to solve concrete friction points across web platforms, concurrency, and cloud infrastructure.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          {/* Open Editorial List with Clean Dividers */}
+          <div className="divide-y divide-[#D8E5E3]">
             {buildingAreas.map((area) => (
               <div
                 key={area.domain}
-                className="p-7 sm:p-8 rounded-3xl bg-[#FFFFFF] border border-[#D8E5E3] hover:border-[#90A9A6] transition-all flex flex-col justify-between group shadow-xs hover:shadow-md"
+                className="py-8 first:pt-0 last:pb-0 grid grid-cols-1 lg:grid-cols-12 gap-6 items-baseline group"
               >
-                <div>
-                  <span className="text-xs font-mono font-bold text-[#986953] block mb-2">
+                <div className="lg:col-span-4">
+                  <span className="text-xs font-mono font-bold text-[#986953] block mb-1">
                     {area.domain}
                   </span>
-                  <h3 className="text-xl font-display font-bold text-[#352A27] group-hover:text-[#986953] transition-colors mb-3">
+                  <h3 className="text-xl font-display font-bold text-[#352A27] group-hover:text-[#2E8B57] transition-colors">
                     {area.title}
                   </h3>
-                  <p className="text-sm text-[#675B57] leading-relaxed">
+                </div>
+
+                <div className="lg:col-span-6">
+                  <p className="text-sm sm:text-base text-[#675B57] leading-relaxed">
                     {area.description}
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-[#D8E5E3]/80 flex items-center justify-between">
+                <div className="lg:col-span-2 lg:text-right">
                   <Link
                     href={area.projectLink}
                     className="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-[#2E8B57] hover:underline"
                   >
-                    <span>{area.projectName}</span>
+                    <span>Case Study</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
@@ -249,38 +245,36 @@ export default function AboutPage() {
           </div>
 
           {/* Connected Blueprint Flow */}
-          <div className="relative">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-              {engineeringPhilosophy.map((step, idx) => (
-                <div
-                  key={step.step}
-                  className="p-6 rounded-2xl bg-[#FFFFFF] border-2 border-[#D8E5E3] hover:border-[#2E8B57] transition-all flex flex-col justify-between relative group"
-                >
-                  <div>
-                    <div className="flex items-center justify-between gap-2 mb-3">
-                      <span className="font-mono text-xs font-bold text-[#986953] bg-[#E9F6F5] px-2 py-0.5 rounded border border-[#D8E5E3]">
-                        PHASE {step.step}
-                      </span>
-                      <span className="w-2 h-2 rounded-full bg-[#90A9A6] group-hover:bg-[#2E8B57] transition-colors" />
-                    </div>
-
-                    <h3 className="font-display font-bold text-lg text-[#352A27] mb-2">
-                      {step.phase}
-                    </h3>
-
-                    <p className="text-xs text-[#675B57] leading-relaxed">
-                      {step.desc}
-                    </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            {engineeringPhilosophy.map((step, idx) => (
+              <div
+                key={step.step}
+                className="p-6 rounded-2xl bg-[#FFFFFF] border-2 border-[#D8E5E3] hover:border-[#2E8B57] transition-all flex flex-col justify-between relative group"
+              >
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-3">
+                    <span className="font-mono text-xs font-bold text-[#986953] bg-[#E9F6F5] px-2 py-0.5 rounded border border-[#D8E5E3]">
+                      PHASE {step.step}
+                    </span>
+                    <span className="w-2 h-2 rounded-full bg-[#90A9A6] group-hover:bg-[#2E8B57] transition-colors" />
                   </div>
 
-                  {idx < 4 && (
-                    <div className="hidden lg:block absolute -right-3 top-1/2 -translate-y-1/2 z-10 p-1 rounded-full bg-[#FFFFFF] border border-[#D8E5E3] text-[#90A9A6]">
-                      <ArrowRight className="w-3 h-3" />
-                    </div>
-                  )}
+                  <h3 className="font-display font-bold text-lg text-[#352A27] mb-2">
+                    {step.phase}
+                  </h3>
+
+                  <p className="text-xs text-[#675B57] leading-relaxed">
+                    {step.desc}
+                  </p>
                 </div>
-              ))}
-            </div>
+
+                {idx < 4 && (
+                  <div className="hidden lg:block absolute -right-3 top-1/2 -translate-y-1/2 z-10 p-1 rounded-full bg-[#FFFFFF] border border-[#D8E5E3] text-[#90A9A6]">
+                    <ArrowRight className="w-3 h-3" />
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </section>
 
@@ -305,7 +299,7 @@ export default function AboutPage() {
                   Bachelor of Technology in Computer Science and Engineering • Aug 2024 – May 2028
                 </p>
                 <p className="mt-4 text-sm sm:text-base text-[#675B57] leading-relaxed max-w-2xl">
-                  Undergraduate curriculum focused on core systems engineering, data structures and algorithms, operating systems, database management systems, and distributed web architectures.
+                  Undergraduate curriculum focused on core computer science foundations: data structures and algorithms, operating systems, database management systems, computer networks, and full-stack software development.
                 </p>
               </div>
 
@@ -327,10 +321,10 @@ export default function AboutPage() {
         </section>
 
         {/* =========================================================================
-            6. CURRENT TECHNICAL DIRECTION
+            6. CURRENT TECHNICAL DIRECTION (OPEN EDITORIAL 3-COLUMN LAYOUT)
             ========================================================================= */}
         <section className="mb-20 sm:mb-24 border-t border-[#D8E5E3] pt-12 sm:pt-16">
-          <div className="max-w-3xl mb-8">
+          <div className="max-w-3xl mb-10">
             <span className="text-xs font-mono text-[#90A9A6] uppercase tracking-wider block font-semibold mb-2">
               03 // WHERE I AM HEADING NEXT
             </span>
@@ -339,39 +333,39 @@ export default function AboutPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-6 rounded-2xl bg-[#FFFFFF] border border-[#D8E5E3]">
-              <span className="text-xs font-mono font-bold text-[#2E8B57] block mb-2">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="space-y-2">
+              <span className="text-xs font-mono font-bold text-[#2E8B57] block">
                 DISTRIBUTED RUNTIMES
               </span>
-              <h3 className="font-display font-bold text-base text-[#352A27] mb-2">
-                Event Streaming & Queues
+              <h3 className="font-display font-bold text-lg text-[#352A27]">
+                Event Queues & Concurrency
               </h3>
-              <p className="text-xs sm:text-sm text-[#675B57] leading-relaxed">
-                Deepening work with asynchronous worker queues (BullMQ/Redis) and idempotent state reconciliation to withstand network partitioning and out-of-order execution.
+              <p className="text-sm text-[#675B57] leading-relaxed">
+                Deepening work with asynchronous worker queues (BullMQ/Redis) and idempotent state reconciliation to handle burst workloads and out-of-order execution safely.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-[#FFFFFF] border border-[#D8E5E3]">
-              <span className="text-xs font-mono font-bold text-[#D49879] block mb-2">
+            <div className="space-y-2">
+              <span className="text-xs font-mono font-bold text-[#D49879] block">
                 CLOUD OBSERVABILITY
               </span>
-              <h3 className="font-display font-bold text-base text-[#352A27] mb-2">
-                Cluster Health & Drift
+              <h3 className="font-display font-bold text-lg text-[#352A27]">
+                Cluster State & Governance
               </h3>
-              <p className="text-xs sm:text-sm text-[#675B57] leading-relaxed">
+              <p className="text-sm text-[#675B57] leading-relaxed">
                 Expanding non-destructive observation models over Kubernetes and GitOps tooling (Argo CD) to detect configuration drift and enforce container security gates.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-[#FFFFFF] border border-[#D8E5E3]">
-              <span className="text-xs font-mono font-bold text-[#986953] block mb-2">
+            <div className="space-y-2">
+              <span className="text-xs font-mono font-bold text-[#986953] block">
                 AGENTIC ARCHITECTURES
               </span>
-              <h3 className="font-display font-bold text-base text-[#352A27] mb-2">
+              <h3 className="font-display font-bold text-lg text-[#352A27]">
                 Autonomous Tool Execution
               </h3>
-              <p className="text-xs sm:text-sm text-[#675B57] leading-relaxed">
+              <p className="text-sm text-[#675B57] leading-relaxed">
                 Applying knowledge from Oracle Certified Foundations Associate — Agentic AI to build verifiable, deterministic tool invocation pipelines for software engineering workflows.
               </p>
             </div>
@@ -384,7 +378,7 @@ export default function AboutPage() {
         <PageEndCta
           variant="mint-editorial"
           title="Have something worth building?"
-          subtitle="I am actively open to software engineering internships, junior developer roles, and technical collaborations. Let’s discuss how I can contribute to your team."
+          subtitle="I am actively open to full-stack developer opportunities, software engineering internships, and technical collaborations. Let’s connect."
           primaryButtonText="Contact GuruTej"
           primaryButtonHref="/contact"
           secondaryButtonText="Explore Projects"
