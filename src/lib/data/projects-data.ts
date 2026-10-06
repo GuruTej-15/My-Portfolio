@@ -299,7 +299,7 @@ compare(a, b) {
     plainEnglishSummary: 'A fast, offline-capable learning application featuring 3D flip card interactions, dynamic quiz evaluation, and headless CMS synchronization via Google Sheets.',
     inSimpleWords: 'A lightweight, distraction-free study tool that loads instantly, works 100% offline via Progressive Web App technology, and syncs study decks from Google Sheets without requiring a database server.',
     problem: 'Students and self-learners face digital flashcard platforms cluttered with invasive ads, cumbersome account walls, and paywalled offline modes that hinder focused, distraction-free active recall.',
-    whyItMatters: 'Spaced repetition and active recall are the most scientifically backed memorization techniques. Any friction in accessibility or loss of offline connectivity disrupts student study consistency.',
+    whyItMatters: 'Effective active recall and self-testing require instantaneous response times and reliable access. Any latency in deck loading or loss of network connectivity interrupts study flow and focus.',
     whatIBuilt: 'Engineered an interactive Progressive Web App (PWA) using vanilla JavaScript (ES6+), custom Service Workers, and hardware-accelerated CSS3 3D transforms. Integrated Google Apps Script & Google Sheets API as a serverless, headless CMS.',
     howItWorks: 'The application fetches questions asynchronously from a Google Apps Script JSON endpoint and caches all assets via a custom Service Worker. It applies the Fisher-Yates shuffle algorithm for unbiased randomization. Question cards feature smooth 3D CSS rotateY flips with instant MCQ evaluation and explanation reveals.',
     architectureDetails: [

@@ -93,7 +93,7 @@ export function Footer() {
                   <Download className="w-3.5 h-3.5 text-[#D49879]" />
                   <span>Download CV (PDF)</span>
                 </span>
-                <span className="text-[10px] font-mono text-[#D8E5E3]">118 KB</span>
+                <span className="text-[10px] font-mono text-[#D8E5E3]">243 KB</span>
               </a>
 
               <a
