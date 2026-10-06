@@ -82,7 +82,7 @@ export interface TimelineMilestone {
   description: string;
   gradeOrOutcome?: string;
   skillsAcquired: string[];
-  category: 'Education' | 'Training' | 'Achievement' | 'Community';
+  category: 'Education' | 'Training' | 'Certification' | 'Project' | 'Extracurricular' | 'Community';
   highlight?: boolean;
 }
 
