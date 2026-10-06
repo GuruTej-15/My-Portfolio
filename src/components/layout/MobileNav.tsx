@@ -45,6 +45,17 @@ export function MobileNav() {
     };
   }, [isOpen]);
 
+  // Close on Escape key press for accessibility
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isOpen) {
+        setIsOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen]);
+
   return (
     <div className="md:hidden">
       {/* Trigger Button */}

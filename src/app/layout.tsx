@@ -35,13 +35,13 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://gurutejpratap.vercel.app'),
   title: {
     template: '%s | GuruTej Pratap',
-    default: 'GuruTej Pratap — Full-Stack Developer & Systems Builder',
+    default: 'GuruTej Pratap — Full-Stack Developer',
   },
   description:
     'Production portfolio of GuruTej Pratap. Exploring full-stack engineering, operating systems synchronization, cloud-native DevOps overlays, and algorithmic optimization. B.Tech CSE @ Lovely Professional University.',
   keywords: [
     'GuruTej Pratap',
-    'Full Stack Developer',
+    'Full-Stack Developer',
     'Next.js 16',
     'React 19',
     'OS Concurrency',
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://gurutejpratap.vercel.app',
     siteName: 'GuruTej Pratap Portfolio',
-    title: 'GuruTej Pratap — Full-Stack Developer & Systems Builder',
+    title: 'GuruTej Pratap — Full-Stack Developer',
     description:
       'Personal portfolio and engineering case studies of GuruTej Pratap. Architected RecordHub, OS Locking Simulator, and Unified DevOps Platform.',
     images: [
@@ -69,13 +69,13 @@ export const metadata: Metadata = {
         url: '/images/portrait.png',
         width: 1111,
         height: 1415,
-        alt: 'GuruTej Pratap — Full-Stack Developer & Systems Builder',
+        alt: 'GuruTej Pratap — Full-Stack Developer',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'GuruTej Pratap — Full-Stack Developer & Systems Builder',
+    title: 'GuruTej Pratap — Full-Stack Developer',
     description:
       'Explore full-stack applications, OS deadlock simulation, and cloud-native systems by GuruTej Pratap.',
     images: ['/images/portrait.png'],

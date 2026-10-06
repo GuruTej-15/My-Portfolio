@@ -10,7 +10,7 @@ import { HomeContactCTA } from '@/components/hero/HomeContactCTA';
 import { OrganicCircle } from '@/components/ui/OrganicCircle';
 
 export const metadata: Metadata = {
-  title: 'GuruTej Pratap — Full-Stack Developer & Systems Builder',
+  title: 'GuruTej Pratap — Full-Stack Developer',
   description:
     'Production portfolio of GuruTej Pratap. Architected RecordHub, OS Locking & Concurrency Simulator, and Unified DevOps Platform. B.Tech CSE @ Lovely Professional University.',
 };

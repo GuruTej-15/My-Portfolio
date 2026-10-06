@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Download } from 'lucide-react';
 import { MobileNav } from './MobileNav';
 import { Sparkle } from '../ui/Sparkle';
@@ -19,6 +22,7 @@ const navLinks: NavLinkItem[] = [
 ];
 
 export function Navbar() {
+  const pathname = usePathname();
   return (
     <header className="sticky top-0 z-40 w-full bg-[#FDFDFD]/90 backdrop-blur-md border-b border-[#D8E5E3] transition-all">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
@@ -46,15 +50,25 @@ export function Navbar() {
           className="hidden md:flex items-center gap-1 lg:gap-2 px-3 py-1.5 rounded-full bg-[#E9F6F5]/50 border border-[#D8E5E3]/80"
           aria-label="Main Navigation"
         >
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="px-3.5 py-1.5 text-xs font-medium text-[#675B57] hover:text-[#352A27] hover:bg-[#E9F6F5] rounded-full transition-all focus-visible:outline-2 focus-visible:outline-[#986953]"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isActive =
+              pathname === link.href ||
+              (link.href !== '/' && pathname.startsWith(link.href));
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`px-3.5 py-1.5 text-xs rounded-full transition-all focus-visible:outline-2 focus-visible:outline-[#986953] ${
+                  isActive
+                    ? 'bg-[#D3E8E6] text-[#352A27] font-semibold shadow-xs'
+                    : 'font-medium text-[#675B57] hover:text-[#352A27] hover:bg-[#E9F6F5]'
+                }`}
+                aria-current={isActive ? 'page' : undefined}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Desktop Actions */}

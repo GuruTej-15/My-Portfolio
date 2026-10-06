@@ -91,7 +91,7 @@ export const journeyData: TimelineMilestone[] = [
   {
     id: 'cybersmart-internship',
     year: '2025',
-    period: '2024 - Aug 2025',
+    period: 'Aug 2025',
     title: 'CyberSmart Awareness CSR Internship',
     institution: 'WNS Cares Foundation',
     location: 'Hybrid',
