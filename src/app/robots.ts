@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://gurutejpratap.vercel.app/sitemap.xml',
+    sitemap: 'https://gurutej-portfolio.vercel.app/sitemap.xml',
   };
 }

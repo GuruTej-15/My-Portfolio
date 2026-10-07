@@ -202,7 +202,7 @@ export default async function Image() {
               fontWeight: 700,
             }}
           >
-            gurutejpratap.vercel.app
+            gurutej-portfolio.vercel.app
           </div>
         </div>
       </div>

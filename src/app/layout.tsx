@@ -33,7 +33,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://gurutejpratap.vercel.app'),
+  metadataBase: new URL('https://gurutej-portfolio.vercel.app'),
   title: {
     template: '%s | GuruTej Pratap',
     default: 'GuruTej Pratap — Full-Stack Developer',
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://gurutejpratap.vercel.app',
+    url: 'https://gurutej-portfolio.vercel.app',
     siteName: 'GuruTej Pratap Portfolio',
     title: 'GuruTej Pratap — Full-Stack Developer',
     description:

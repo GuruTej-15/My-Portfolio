@@ -29,9 +29,8 @@ export function EditorialHero() {
             <span className="text-xs sm:text-sm font-mono tracking-widest text-[#90A9A6] uppercase block">
               Full-Stack & Systems Engineering
             </span>
-            <h1 className="text-3xl min-[400px]:text-4xl sm:text-6xl lg:text-7xl font-display font-extrabold tracking-tight text-[#352A27] leading-[1.08] break-words">
-              Building Digital{' '}
-              <br className="hidden sm:inline" />
+            <h1 className="text-2xl min-[360px]:text-[1.75rem] min-[420px]:text-4xl sm:text-6xl lg:text-7xl font-display font-extrabold tracking-tight text-[#352A27] leading-[1.1] break-words">
+              Building Digital <br className="sm:inline" />
               <span className="text-[#352A27] relative inline-block">
                 Systems
                 <span className="absolute bottom-1 sm:bottom-2 left-0 w-full h-3.5 bg-[#D3E8E6] -z-10 -rotate-1 rounded-sm" />

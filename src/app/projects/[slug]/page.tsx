@@ -194,7 +194,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
               <span className="text-xs font-mono text-[#2E8B57] uppercase tracking-wider block font-bold">
                 01 // PRODUCT PROOF & RUNTIME VIEW
               </span>
-              <h2 className="text-2xl sm:text-3xl font-display font-bold text-[#352A27] mt-1">
+              <h2 className="text-xl min-[400px]:text-2xl sm:text-3xl font-display font-bold text-[#352A27] mt-1 break-words">
                 Visual Proof & System Telemetry
               </h2>
             </div>

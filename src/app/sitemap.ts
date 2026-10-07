@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 import { projectsData } from '@/lib/data/projects-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://gurutejpratap.vercel.app';
+  const baseUrl = 'https://gurutej-portfolio.vercel.app';
   const currentDate = new Date().toISOString().split('T')[0];
 
   const staticRoutes: MetadataRoute.Sitemap = [

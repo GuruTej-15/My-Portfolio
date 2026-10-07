@@ -100,10 +100,10 @@ export default function SkillsPage() {
 
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
             <div>
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-display font-extrabold tracking-tight text-[#352A27] leading-[1.15]">
+              <h1 className="text-xl min-[360px]:text-2xl min-[440px]:text-3xl sm:text-5xl lg:text-6xl font-display font-extrabold tracking-tight text-[#352A27] leading-[1.15] break-words">
                 What I actually build with.
               </h1>
-              <p className="mt-4 text-lg sm:text-xl font-mono text-[#675B57] max-w-3xl leading-relaxed">
+              <p className="mt-4 text-sm sm:text-base md:text-lg font-mono text-[#675B57] max-w-3xl leading-relaxed break-words">
                 No arbitrary percentage bars or fake proficiency gauges. An authentic index of languages, libraries, and computer science fundamentals verified through active project repositories.
               </p>
             </div>
@@ -125,17 +125,17 @@ export default function SkillsPage() {
         {/* =========================================================================
             ENGINEERING-SYSTEM BLUEPRINT VISUALIZATION
             ========================================================================= */}
-        <section className="mb-16 sm:mb-20 p-8 sm:p-10 rounded-3xl bg-[#F4F9F8] border-2 border-[#D8E5E3]">
+        <section className="mb-16 sm:mb-20 p-5 sm:p-8 md:p-10 rounded-3xl bg-[#F4F9F8] border-2 border-[#D8E5E3]">
           <div className="flex flex-wrap items-center justify-between gap-3 mb-6 pb-4 border-b border-[#D8E5E3]">
             <div>
               <span className="text-xs font-mono text-[#986953] font-bold uppercase tracking-wider block">
                 SYSTEM ARCHITECTURE TOPOLOGY
               </span>
-              <h2 className="text-xl sm:text-2xl font-display font-bold text-[#352A27] mt-0.5">
+              <h2 className="text-xl sm:text-2xl font-display font-bold text-[#352A27] mt-0.5 break-words">
                 Full-Stack Tier Relationship
               </h2>
             </div>
-            <span className="text-xs font-mono text-[#90A9A6]">
+            <span className="text-xs font-mono text-[#90A9A6] break-all sm:break-normal">
               CORE → FRONTEND → BACKEND → DATA → INFRASTRUCTURE
             </span>
           </div>

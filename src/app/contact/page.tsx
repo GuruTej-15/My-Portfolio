@@ -34,10 +34,10 @@ export default function ContactPage() {
 
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
             <div>
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-display font-extrabold tracking-tight text-[#352A27] leading-[1.15]">
+              <h1 className="text-2xl min-[400px]:text-3xl sm:text-5xl lg:text-6xl font-display font-extrabold tracking-tight text-[#352A27] leading-[1.15] break-words">
                 Have something worth building?
               </h1>
-              <p className="mt-4 text-lg sm:text-xl font-mono text-[#675B57] max-w-3xl leading-relaxed">
+              <p className="mt-4 text-sm sm:text-base md:text-lg font-mono text-[#675B57] max-w-3xl leading-relaxed break-words">
                 I am actively open to full-stack software engineering opportunities, systems roles, and software internships. Reach out directly or send an inquiry below.
               </p>
             </div>

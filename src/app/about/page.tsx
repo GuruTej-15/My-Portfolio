@@ -102,11 +102,11 @@ export default function AboutPage() {
             </span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-display font-extrabold tracking-tight leading-[1.15] max-w-4xl text-[#352A27]">
+          <h1 className="text-xl min-[360px]:text-2xl min-[440px]:text-3xl sm:text-5xl lg:text-6xl font-display font-extrabold tracking-tight leading-[1.15] max-w-4xl text-[#352A27] break-words">
             &ldquo;I build digital systems by understanding how they work beneath the surface.&rdquo;
           </h1>
 
-          <p className="mt-6 text-lg sm:text-xl font-mono text-[#675B57] max-w-3xl leading-relaxed">
+          <p className="mt-6 text-sm sm:text-base md:text-lg font-mono text-[#675B57] max-w-3xl leading-relaxed break-words">
             Full-stack developer and systems builder based in India. Engineering software where architectural clarity, algorithmic discipline, and practical reliability converge.
           </p>
         </section>
