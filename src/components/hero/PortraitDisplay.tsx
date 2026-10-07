@@ -16,9 +16,9 @@ export function PortraitDisplay({
   size = 'hero',
 }: PortraitDisplayProps) {
   const containerSizes = {
-    hero: 'w-[320px] sm:w-[380px] md:w-[420px] lg:w-[460px] aspect-[4/5]',
-    about: 'w-[300px] sm:w-[360px] md:w-[400px] aspect-[4/5]',
-    compact: 'w-[240px] sm:w-[280px] aspect-[4/5]',
+    hero: 'w-[280px] min-[360px]:w-[300px] min-[400px]:w-[340px] sm:w-[380px] md:w-[420px] lg:w-[460px] aspect-[4/5]',
+    about: 'w-[260px] min-[360px]:w-[290px] min-[400px]:w-[320px] sm:w-[360px] md:w-[400px] aspect-[4/5]',
+    compact: 'w-[220px] sm:w-[280px] aspect-[4/5]',
   };
 
   return (

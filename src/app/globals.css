@@ -40,7 +40,10 @@
   --accent-deep: #986953;
 }
 
-html {
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
   scroll-behavior: smooth;
   background-color: #FDFDFD;
   color: #352A27;

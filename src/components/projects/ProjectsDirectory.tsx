@@ -88,7 +88,7 @@ export function ProjectsDirectory({ projects }: ProjectsDirectoryProps) {
         /* DEFAULT VIEW: Curated Editorial Index with Hierarchy */
         <div className="space-y-10">
           {/* Dominant Flagship Card: RecordHub */}
-          <div className="p-8 sm:p-10 lg:p-12 rounded-3xl bg-[#FFFFFF] border-2 border-[#D8E5E3] hover:border-[#90A9A6] transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-[#90A9A6]/10 group">
+          <div className="p-5 sm:p-8 lg:p-12 rounded-3xl bg-[#FFFFFF] border-2 border-[#D8E5E3] hover:border-[#90A9A6] transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-[#90A9A6]/10 group">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               <div className="lg:col-span-8 flex flex-col justify-between">
                 <div>
@@ -104,11 +104,11 @@ export function ProjectsDirectory({ projects }: ProjectsDirectoryProps) {
                     </span>
                   </div>
 
-                  <h3 className="text-3xl sm:text-4xl font-display font-extrabold text-[#352A27] group-hover:text-[#986953] transition-colors">
+                  <h3 className="text-2xl min-[400px]:text-3xl sm:text-4xl font-display font-extrabold text-[#352A27] group-hover:text-[#986953] transition-colors break-words">
                     {recordhub.title}
                   </h3>
 
-                  <p className="mt-2 text-sm font-mono text-[#90A9A6]">
+                  <p className="mt-2 text-sm font-mono text-[#90A9A6] break-words">
                     {recordhub.tagline}
                   </p>
 
@@ -117,8 +117,8 @@ export function ProjectsDirectory({ projects }: ProjectsDirectoryProps) {
                   </p>
 
                   {/* Verified Metric Pill */}
-                  <div className="mt-6 inline-flex items-center gap-4 p-3.5 rounded-2xl bg-[#E9F6F5]/70 border border-[#D8E5E3]">
-                    <div className="border-r border-[#90A9A6]/30 pr-4">
+                  <div className="mt-6 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 p-3.5 rounded-2xl bg-[#E9F6F5]/70 border border-[#D8E5E3]">
+                    <div className="sm:border-r border-[#90A9A6]/30 sm:pr-4">
                       <span className="text-[10px] font-mono text-[#90A9A6] uppercase block">
                         Verified Metric
                       </span>
@@ -180,7 +180,7 @@ export function ProjectsDirectory({ projects }: ProjectsDirectoryProps) {
               </div>
 
               {/* Blueprint Diagram Box */}
-              <div className="lg:col-span-4 rounded-2xl bg-[#E9F6F5]/40 border border-[#D8E5E3] p-6 flex flex-col justify-between h-full min-h-[260px]">
+              <div className="lg:col-span-4 rounded-2xl bg-[#E9F6F5]/40 border border-[#D8E5E3] p-4 sm:p-6 flex flex-col justify-between h-full min-h-[260px]">
                 <div className="flex items-center justify-between text-[11px] font-mono text-[#90A9A6]">
                   <span>// ARCHITECTURE</span>
                   <span className="text-[#2E8B57]">VERIFIED</span>

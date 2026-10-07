@@ -125,7 +125,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
             </span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-[#352A27] tracking-tight leading-[1.1] max-w-4xl">
+          <h1 className="text-2xl min-[400px]:text-3xl sm:text-5xl lg:text-6xl font-display font-extrabold text-[#352A27] tracking-tight leading-[1.1] max-w-4xl break-words">
             {project.title}
           </h1>
 
