@@ -135,7 +135,7 @@ export function EditorialHero() {
               <div className="mt-2.5 pt-2 border-t border-[#D8E5E3]/70 flex items-center justify-between px-1 text-[10px] font-mono text-[#675B57]">
                 <span className="flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#2E8B57]" />
-                  <span>8 Verified Ecosystem Hubs</span>
+                  <span>8 Connected Technology Nodes</span>
                 </span>
                 <span className="text-[#90A9A6]">
                   Web • Systems • Cloud

@@ -118,7 +118,7 @@ export function ProjectVisualProof({
           onClick={() => setIsLightboxOpen(true)}
         >
           {/* Main Visual Image */}
-          <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] max-h-[560px] overflow-hidden">
+          <div className="relative w-full aspect-[16/9] max-h-[720px] overflow-hidden">
             <Image
               src={currentScreenshot.imageSrc}
               alt={currentScreenshot.title}
@@ -183,7 +183,7 @@ export function ProjectVisualProof({
                     )}
                   >
                     {/* Thumbnail Preview */}
-                    <div className="relative w-full aspect-[16/10] rounded-lg overflow-hidden border border-[#D8E5E3] bg-[#0E1520] mb-2">
+                    <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden border border-[#D8E5E3] bg-[#0E1520] mb-2">
                       <Image
                         src={s.imageSrc}
                         alt={s.title}
