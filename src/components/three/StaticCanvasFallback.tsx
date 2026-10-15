@@ -12,57 +12,58 @@ interface NodePoint {
   x: number;
   y: number;
   r: number;
+  labelY: number;
   highlight?: boolean;
 }
 
 const fallbackNodes: NodePoint[] = [
-  { id: 'next', name: 'Next.js', x: 50, y: 35, r: 8, highlight: true },
-  { id: 'react', name: 'React', x: 25, y: 25, r: 7 },
-  { id: 'node', name: 'Node.js', x: 75, y: 28, r: 7 },
-  { id: 'mongo', name: 'MongoDB', x: 82, y: 62, r: 6.5 },
-  { id: 'cpp', name: 'C/C++', x: 18, y: 65, r: 7 },
-  { id: 'devops', name: 'DevOps', x: 38, y: 82, r: 6.5, highlight: true },
-  { id: 'corecs', name: 'Core CS', x: 65, y: 78, r: 7 },
-  { id: 'github', name: 'Git', x: 50, y: 56, r: 5.5 },
+  { id: 'next', name: 'Next.js 16', x: 50, y: 16, r: 5.2, labelY: 8.5, highlight: true },
+  { id: 'react', name: 'React 19', x: 18, y: 20, r: 4.6, labelY: 12.5 },
+  { id: 'node', name: 'Node.js', x: 82, y: 20, r: 4.6, labelY: 12.5 },
+  { id: 'git', name: 'Git & CI/CD', x: 50, y: 36, r: 4.6, labelY: 43.5 },
+  { id: 'cpp', name: 'C / C++', x: 15, y: 42, r: 4.6, labelY: 49.5 },
+  { id: 'mongo', name: 'MongoDB', x: 85, y: 42, r: 4.6, labelY: 49.5 },
+  { id: 'corecs', name: 'POSIX / OS', x: 31, y: 57, r: 4.4, labelY: 64.5 },
+  { id: 'devops', name: 'Kubernetes', x: 69, y: 57, r: 4.6, labelY: 64.5, highlight: true },
 ];
 
 const connections: [string, string][] = [
   ['next', 'react'],
   ['next', 'node'],
-  ['next', 'github'],
-  ['node', 'mongo'],
-  ['node', 'devops'],
+  ['next', 'git'],
   ['react', 'cpp'],
-  ['cpp', 'devops'],
-  ['devops', 'corecs'],
-  ['corecs', 'mongo'],
-  ['github', 'devops'],
-  ['github', 'corecs'],
+  ['node', 'mongo'],
+  ['git', 'devops'],
+  ['git', 'cpp'],
+  ['cpp', 'corecs'],
+  ['corecs', 'devops'],
+  ['node', 'devops'],
+  ['mongo', 'devops'],
 ];
 
 export function StaticCanvasFallback({ className }: StaticCanvasFallbackProps) {
   return (
     <div
       className={clsx(
-        'relative w-full h-full min-h-[340px] flex items-center justify-center select-none overflow-hidden rounded-3xl bg-[#E9F6F5]/40 border border-[#D8E5E3]',
+        'relative w-full h-full flex items-center justify-center select-none overflow-hidden rounded-xl bg-[#F4F9F8]',
         className
       )}
-      aria-label="Mint Systems Engineering Network Diagram"
+      aria-label="Mint Systems Engineering Topology Diagram"
       role="img"
     >
       {/* Background blueprint grid pattern */}
-      <div className="absolute inset-0 blueprint-grid opacity-60" />
+      <div className="absolute inset-0 blueprint-grid opacity-50" />
 
       {/* Center Ambient Glow */}
-      <div className="absolute w-56 h-56 rounded-full bg-gradient-to-tr from-[#D3E8E6] to-[#E9F6F5] blur-2xl opacity-70 pointer-events-none" />
+      <div className="absolute w-48 h-48 rounded-full bg-gradient-to-tr from-[#D3E8E6] to-[#E9F6F5] blur-2xl opacity-60 pointer-events-none" />
 
       <svg
-        viewBox="0 0 100 100"
-        className="w-full h-full max-w-[420px] max-h-[380px] relative z-10 p-4"
+        viewBox="0 0 100 70"
+        className="w-full h-full relative z-10 px-2 py-1"
         preserveAspectRatio="xMidYMid meet"
       >
         {/* Connector Lines */}
-        <g stroke="#90A9A6" strokeWidth="0.75" strokeDasharray="1.5 1.5" opacity="0.6">
+        <g stroke="#90A9A6" strokeWidth="0.65" strokeDasharray="1.2 1.2" opacity="0.55">
           {connections.map(([fromId, toId]) => {
             const from = fallbackNodes.find((n) => n.id === fromId);
             const to = fallbackNodes.find((n) => n.id === toId);
@@ -79,18 +80,18 @@ export function StaticCanvasFallback({ className }: StaticCanvasFallbackProps) {
           })}
         </g>
 
-        {/* Node Circles */}
+        {/* Node Circles & Labels */}
         {fallbackNodes.map((node) => (
           <g key={node.id} className="cursor-default">
             {/* Outer Soft Ring */}
             <circle
               cx={node.x}
               cy={node.y}
-              r={node.r + 2.5}
+              r={node.r + 2.0}
               fill={node.highlight ? '#D49879' : '#D3E8E6'}
               fillOpacity={node.highlight ? '0.2' : '0.35'}
               className="animate-pulse"
-              style={{ animationDuration: `${2.5 + (node.x % 3)}s` }}
+              style={{ animationDuration: `${2.8 + (node.x % 3)}s` }}
             />
 
             {/* Inner Hub Circle */}
@@ -100,23 +101,27 @@ export function StaticCanvasFallback({ className }: StaticCanvasFallbackProps) {
               r={node.r}
               fill="#FFFFFF"
               stroke={node.highlight ? '#D49879' : '#90A9A6'}
-              strokeWidth="1.2"
+              strokeWidth="0.9"
             />
 
             {/* Core Pip */}
             <circle
               cx={node.x}
               cy={node.y}
-              r={node.r * 0.35}
-              fill={node.highlight ? '#986953' : '#352A27'}
+              r={node.r * 0.4}
+              fill={node.highlight ? '#986953' : node.id === 'next' ? '#2E8B57' : '#352A27'}
             />
 
-            {/* Label */}
+            {/* Label with white outline pill effect */}
             <text
               x={node.x}
-              y={node.y + node.r + 4.5}
+              y={node.labelY}
               textAnchor="middle"
-              className="text-[3.2px] font-mono font-medium fill-[#352A27]"
+              className="text-[2.6px] font-mono font-bold fill-[#352A27]"
+              paintOrder="stroke"
+              stroke="#FDFDFD"
+              strokeWidth="0.6"
+              strokeLinejoin="round"
               style={{ pointerEvents: 'none' }}
             >
               {node.name}
@@ -124,17 +129,6 @@ export function StaticCanvasFallback({ className }: StaticCanvasFallbackProps) {
           </g>
         ))}
       </svg>
-
-      {/* Blueprint Legend Pill */}
-      <div className="absolute bottom-3 right-3 z-20 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#FFFFFF]/90 border border-[#D8E5E3] text-[10px] font-mono text-[#675B57] shadow-xs">
-        <span className="w-1.5 h-1.5 rounded-full bg-[#2E8B57]" />
-        <span>MINT SYSTEMS // TOPOLOGY</span>
-      </div>
-
-      <div className="absolute top-3 left-3 z-20 flex items-center gap-1 text-[10px] font-mono text-[#90A9A6]">
-        <Sparkle size={10} variant="coral" />
-        <span>SYSTEM ARCHITECTURE</span>
-      </div>
     </div>
   );
 }

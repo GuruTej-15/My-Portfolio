@@ -126,11 +126,20 @@ export function EditorialHero() {
                   <span>3D STACK TOPOLOGY</span>
                 </div>
                 <span className="text-[10px] font-mono text-[#90A9A6]">
-                  INTERACTIVE
+                  INTERACTIVE // ORBIT
                 </span>
               </div>
-              <div className="h-[220px] w-full rounded-xl overflow-hidden bg-[#E9F6F5]/40 border border-[#D8E5E3]/80">
+              <div className="h-[270px] sm:h-[290px] w-full rounded-xl overflow-hidden bg-[#F4F9F8] border border-[#D8E5E3]">
                 <HeroCanvasWrapper className="w-full h-full" />
+              </div>
+              <div className="mt-2.5 pt-2 border-t border-[#D8E5E3]/70 flex items-center justify-between px-1 text-[10px] font-mono text-[#675B57]">
+                <span className="flex items-center gap-1">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#2E8B57]" />
+                  <span>8 Verified Ecosystem Hubs</span>
+                </span>
+                <span className="text-[#90A9A6]">
+                  Web • Systems • Cloud
+                </span>
               </div>
             </div>
 
